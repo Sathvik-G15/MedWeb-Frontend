@@ -14,11 +14,19 @@ const UserPage = () => {
     const handleSearch = async (e) => {
         e.preventDefault();
 
+        if(!searchTerm){
+            alert("Please enter a medicine");
+            return;
+        }
         try {
             const response = await fetch(`${process.env.REACT_APP_API_URL}/search/shops?medicine=${searchTerm}`);
+            if (!response.ok) {
+                if (response.status === 404) {
+                    alert('No pharmacies found for the entered medicine.'); // Handle 404 specifically
+                }}
             const text = await response.text();
             console.log('SeeResponse:', text);
-            alert("Not Found!! Please check Medicine name");
+            
 
             const data = JSON.parse(text);
             console.log('Parsed Data:', data);
