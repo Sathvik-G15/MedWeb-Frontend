@@ -1,0 +1,119 @@
+
+.user-page {
+    max-width: 800px; /* Set a maximum width for the page */
+    margin: 0 auto; /* Center the page */
+    padding: 20px; /* Add padding around the content */
+    font-family: Arial, sans-serif; /* Font for the page */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+/* src/pages/UserPage.module.css */
+
+.searchButton {
+    padding: 10px 20px; /* Adjust padding for thickness */
+    font-size: 16px; /* Adjust font size */
+    background-color: #007bff; /* Default background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.searchButton:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+
+h2 {
+    color: #007bff; /* Blue color for main heading */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+form {
+    display: flex; /* Use flexbox for alignment */
+    margin-bottom: 20px; /* Space below the form */
+}
+
+input {
+    flex: 1; /* Allow input to take remaining space */
+    padding: 10px; /* Padding inside the input */
+    border: 1px solid #ccc; /* Border for the input */
+    border-radius: 4px; /* Rounded corners for the input */
+    margin-right: 10px; /* Space between input and button */
+}
+
+button {
+    padding: 10px 15px; /* Padding for the button */
+    background-color: #007bff; /* Blue background for the button */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+h3 {
+    color: #007bff; /* Blue color for subheading */
+    margin-top: 20px; /* Space above the subheading */
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+li {
+    display: flex; /* Use flexbox for shop items */
+    justify-content: space-between; /* Space between shop name and address */
+    padding: 10px; /* Padding inside each shop item */
+    border-bottom: 1px solid #ddd; /* Bottom border for each item */
+}
+
+li:last-child {
+    border-bottom: none; /* Remove bottom border for the last item */
+}
+
+span {
+    color: #333; /* Dark text color for shop name and address */
+}
+
+p {
+    color: #999; /* Lighter color for no shops found message */
+}
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: white;
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 8px;
+    width: 600px; /* Increased width */
+    max-width: 90%;
+    position: relative;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}

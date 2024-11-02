@@ -1,0 +1,121 @@
+/* src/styles/AdminPage.module.css */
+
+.adminPage {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    color: #333;
+}
+
+.pharmacyAddress {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between form elements */
+}
+
+.input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submitButton {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.cancelButton {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #dc3545; /* Bootstrap danger color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cancelButton:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.availableMedicinesHeader {
+    margin-top: 30px;
+    font-size: 22px;
+    color: #333;
+}
+
+.medicineList {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.medicineItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.medicineActions {
+    display: flex;
+    gap: 10px; /* Space between action buttons */
+}
+
+.deleteButton, .updateButton {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deleteButton {
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: white;
+}
+
+.deleteButton:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.updateButton {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+}
+
+.updateButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

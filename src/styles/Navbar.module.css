@@ -1,0 +1,137 @@
+/* General Styles for Navbar */
+.navbar {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px; /* Consistent height */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navbar Content Wrapper */
+.navbarContent {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo Styles */
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+    text-decoration: none; /* No underline for the logo */
+}
+
+/* Navbar Links */
+.navLinks {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 20px;
+}
+
+/* Search Form */
+.searchForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Take up full available space */
+    max-width: 400px;
+    gap: 10px;
+    margin-right: auto;
+}
+
+/* Search Input */
+.searchInput {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    width: 200px;
+    transition: width 0.3s ease;
+}
+
+.searchInput:focus {
+    width: 250px;
+    background-color: #f0f0f0;
+}
+
+/* Search Button */
+.searchButton {
+    background-color: #FFDD57;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.searchButton:hover {
+    background-color: #F5C518;
+}
+
+/* User Profile */
+.userProfile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Username Styling */
+.username {
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+    color: white; /* Ensure username is visible */
+}
+
+/* Profile Image */
+.profileImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+/* Logout Button */
+.logoutButton {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logoutButton:hover {
+    background-color: white;
+    color: #1c1c1c;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navLinks {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .searchForm {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .searchInput {
+        width: 100%;
+    }
+}

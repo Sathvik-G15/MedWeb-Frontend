@@ -1,0 +1,28 @@
+/* src/styles/MedicineInfo.css */
+
+.medicine-info {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s ease;
+}
+
+.medicine-info:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.medicine-info h2 {
+  margin: 0 0 8px;
+  color: #333;
+}
+
+.medicine-info p {
+  margin: 4px 0;
+  color: #555;
+}
+
+.medicine-info strong {
+  color: #000;
+}

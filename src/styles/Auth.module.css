@@ -1,0 +1,105 @@
+/* src/styles/Auth.module.css */
+
+.authContainer {
+    width: 90%; /* Improved responsiveness */
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.authForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased spacing for better layout */
+}
+
+.authForm input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+    width: 100%; /* Ensure all inputs take full width */
+}
+
+.authForm input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.authForm button {
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.authForm button:hover {
+    background-color: #367c39;
+    transform: scale(1.05); /* Slight bounce effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.locationContainer {
+    display: flex;
+    flex-direction: column; /* Change to column for address and coordinates */
+    align-items: stretch; /* Make inputs stretch to the same width */
+    gap: 10px; /* Space between inputs */
+}
+
+.locationInput {
+    width: 100%; /* Ensure full width for inputs */
+}
+
+.locationButton {
+    padding: 10px;
+    border: none;
+    background-color: #2196f3;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.locationButton:hover {
+    background-color: #0b7dda;
+    transform: scale(1.05);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Optional: Add responsiveness for smaller screens */
+@media (max-width: 600px) {
+    .authContainer {
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .authForm input {
+        font-size: 14px;
+    }
+
+    .authForm button {
+        font-size: 16px;
+    }
+
+    .locationButton {
+        font-size: 12px; /* Slightly smaller button text */
+    }
+}
